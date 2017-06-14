@@ -22,9 +22,9 @@ describe('Testing fp.js tools.', () => {
   });
   // end map test code block
   // begin filter test code block
-  describe('Testing filter', () => {
+  describe('Testing filter.', () => {
     // test1 begin
-    it('Should return a new array containing array items greater than 1 in a new array', () => {
+    it('Should return a new array containing array items greater than 1 in a new array.', () => {
       expect(fp.filter(testArray1, n => {
         if (n > 1) {
           return n;
@@ -40,7 +40,7 @@ describe('Testing fp.js tools.', () => {
   });
   // end filter test code block
   // begin reduce test code block
-  describe('Testing reduce', () => {
+  describe('Testing reduce.', () => {
     // test1 begin
     it('Should sum up the values of an array starting at the defined value of 10.', () => {
       expect(fp.reduce(testArray1, [(a, b) => a + b, 10])).toEqual(16);
@@ -54,9 +54,9 @@ describe('Testing fp.js tools.', () => {
   });
   // end reduce test code block
   // begin concat test code block
-  describe('Testing concat', () => {
+  describe('Testing concat.', () => {
     // test1 begin
-    it('Should take two arrays and combine them into one returned array', () => {
+    it('Should take two arrays and combine them into one returned array.', () => {
       expect(fp.concat(testArray1, testArray2)).toEqual([1,2,3,4,5,6]);
     });
     // test1 end
@@ -68,7 +68,7 @@ describe('Testing fp.js tools.', () => {
   });
   // end concat test code block
   // begin splice test code block
-  describe('Testing splice', () => {
+  describe('Testing splice.', () => {
     // test1 begin
     it('Should change the contents of an array by removing existing elements.', () => {
       expect(fp.splice(testArray1, 2)).toEqual([3]);
