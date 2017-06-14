@@ -1,8 +1,8 @@
 'use-strict';
 
-const methods = module.exports = {};
+const fp = module.exports = {};
 
-methods.map = (array, args) => {
+fp.map = (array, args) => {
   if(Array.isArray(array)) {
     return Array.prototype.map.call(array, args);
   } else {
@@ -10,7 +10,7 @@ methods.map = (array, args) => {
   }
 };
 
-methods.filter = (array, args) => {
+fp.filter = (array, args) => {
   if(Array.isArray(array)) {
     return Array.prototype.filter.call(array, args);
   } else {
@@ -18,7 +18,7 @@ methods.filter = (array, args) => {
   }
 };
 
-methods.reduce = (array, args) => {
+fp.reduce = (array, args) => {
   if(Array.isArray(array)) {
     return Array.prototype.reduce.apply(array, args);
   } else {
@@ -26,7 +26,7 @@ methods.reduce = (array, args) => {
   }
 };
 
-methods.concat = (array, args) => {
+fp.concat = (array, args) => {
   if(Array.isArray(array)) {
     return Array.prototype.concat.apply(array, args);
   } else {
@@ -34,7 +34,7 @@ methods.concat = (array, args) => {
   }
 };
 
-methods.splice = (array, args) => {
+fp.splice = (array, args) => {
   if(Array.isArray(array)) {
     return Array.prototype.splice.call(array, args);
   } else {
